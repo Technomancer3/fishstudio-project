@@ -1,0 +1,368 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 22px;
+    font-family: 'Rubik', sans-serif;
+}
+body {
+    background-color: rgb(26 33 34);
+}
+body {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+body::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+/*header*/
+header {
+    position:fixed;
+    background: no-repeat url('media/spacefish.jpg') center/cover;
+    width: 100%;
+    height: 5rem;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    box-shadow: 0px 0px 10px black;
+}
+header::after {
+    content: '';
+    position:absolute;
+    z-index: 2;
+    inset: 0;
+    background: rgb(150, 0, 0);
+    opacity: 0.8;
+}
+header h1 {
+    font-size: 2.5rem;
+    margin-left: 3.8rem;
+    color: whitesmoke;
+    text-transform: uppercase;
+    z-index: 3;
+}
+header span {
+    color: rgb(22, 19, 34);
+}
+.nav {
+    margin-right: 3.8rem;
+    display: flex;
+    z-index: 3;
+}
+.nav a{
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: whitesmoke;
+    margin-left: 1rem;
+    transition: all 0.5s;
+}
+.nav a:hover {
+    color: rgba(177, 158, 247, 0.6);
+    text-shadow: rgba(177, 158, 247, 0.6) 0px 0px 10px ;
+}
+/*main*/
+main {
+    position: relative;
+    top: 5rem;
+    margin-bottom: 4rem;
+}
+    /*mission*/
+    .mission {
+        width: 100%;
+        height: 30rem;
+        background: no-repeat url('media/spacefish.jpg') center/cover;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .mission h2 {
+        font-size: 3.4rem;
+        color: whitesmoke;
+        text-transform: uppercase;
+        line-height: 3rem;
+    }
+    .mission .content {
+      margin-left: 5rem;
+      transform: scale(1.2);
+     
+    }
+    .mission .one {
+        line-height: 2.4rem;
+    }
+    .mission .two {
+        font-size: 3.8rem;
+    }
+    .mission .three {
+        font-size: 4.45rem;
+    }
+
+
+    /*projects*/
+    .projects {
+        width: 100%;
+        background: no-repeat url('media/sigma1v4.png') center/cover;
+        padding-bottom: 2rem;
+    }
+    .projects h2{
+        color: whitesmoke;
+        font-size: 2.8rem;
+        text-transform: uppercase;
+        margin-left: 4rem;
+        padding-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    .projects img {
+        max-width: 50%;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .projects h3 {
+        max-width: 50%;
+        font-weight: 500;
+    }
+    .projects .gridone {
+        margin: 0 auto;
+        max-width: 90%;
+        display: grid;
+        grid-template: 3fr 3fr 2fr / repeat(4, 1fr);
+        gap: 0.3rem;
+    }
+    .projects .gridone .one {
+        grid-area: 1 / 1 / 3 / 2;
+        display: flex;
+        justify-content: space-between;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 10px;
+    }
+    .projects .one img {
+        max-width: 70%;
+        height: 100%;
+        object-fit: cover;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .projects .one h3 {
+        width: 30%;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        margin-right: 1rem ;
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+        letter-spacing: 0.2rem;
+    }
+    .projects .gridone .two {
+        grid-area: 1 / 2 / 2 / 5;
+        display: flex;
+        justify-content: space-between;
+        border-top-right-radius: 0px;
+    }
+    .projects .two img {
+        max-width: 60%;
+        height: 100%;
+        object-fit: cover;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+    }
+    .projects .two h3 {
+        width: 40%;
+        align-self: center;
+        margin-left: 1rem;
+        font-size: 2rem;
+        letter-spacing: 0.1rem;
+    }
+    .projects .gridone .three {
+        grid-area: 3 / 1 / 4 / 3;
+        display: flex;
+        justify-content: space-between;
+        border-bottom-left-radius: 0px;
+    }
+    .projects .three img {
+        max-width: 48%;
+        height: 100%;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .projects .three h3 {
+        width: 52%;
+        align-self: center;
+        margin-left: 1.5rem;
+        font-size: 1.4rem;
+        letter-spacing: 0.1rem;
+    }
+    .projects .gridone .four {
+        grid-area: 2 / 2 / 3 / 5;
+        display: flex;
+        justify-content: space-between;
+    }
+    .projects .four img {
+        max-width: 60%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .projects .four h3 {
+        width: 40%;
+        align-self: center;
+        margin-left: 1rem;
+        font-size: 2rem;
+        letter-spacing: 0.1rem;
+    }
+    .projects .gridone .five {
+        grid-area: 3 / 3 / 4 / 5;
+        display: flex;
+        justify-content: space-between;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 0px;
+    }
+    .projects .five img {
+        max-width: 48%;
+        height: 100%;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .projects .five h3 {
+        width: 52%;
+        align-self: center;
+        margin-left: 1.5rem;
+        font-size: 1.4rem;
+        letter-spacing: 0.1rem;
+    }
+    .projects .content {
+        width: 100%;
+        margin: 0 auto;
+        transition: all 2s;
+        border-radius: 10px;
+        background-color: rgba(150, 0, 0, 0.6);
+        color: rgb(22, 19, 34)
+        
+    }
+    .projects .content:hover {
+        color: rgba(217, 206, 255, 0.973);
+        text-shadow: rgba(218, 208, 255, 0.973) 0px 0px 5px ;
+        box-shadow: 0px 0px 80px rgba(64, 37, 165, 0.6);
+        background-color: rgba(64, 37, 165, 0.6);
+        cursor: pointer;
+    }
+ 
+/*team*/
+.team {
+    width: 100%;
+    padding-bottom: 1rem;
+}
+.team .person {
+    transition: all 0.5s;
+}
+.team .person:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+.team h2{
+    color: whitesmoke;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    margin-left: 4rem;
+    padding-top: 4rem;
+    margin-bottom: 4rem;
+}
+.team .members .description{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.445);
+    color: whitesmoke;
+    position: relative;
+    display: grid;
+
+}
+.team .members .description p {
+    font-size: smaller;
+    margin-left: 1rem;
+    padding-bottom: 0.6rem;
+    margin-right: 1rem;
+}
+.team .members .description h4 {
+    margin-left: 1rem;
+    padding-top: 0.6rem;
+    margin-right: 1rem;
+    
+}
+.team .members {
+    display: grid;
+    grid-template:  5fr 2fr / repeat(5, 1fr);
+    margin: 0 auto;
+    width: 90%;
+
+}
+.members img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: grid;
+}
+.members .one img {
+    grid-area: 1 / 1 / 3 / span 1;
+}
+.members .two img {
+    grid-area: 1 / 2 / 3 / span 1;
+}
+.members .three img {
+    grid-area: 1 / 3 / 3 / span 1;
+}
+.members .four img {
+    grid-area: 1 / 4 / 3 / span 1;
+}
+.members .five img {
+    grid-area: 1 / 5 / 3 / span 1;
+}
+
+.members .one .description {
+    grid-area: 2 / 1 / span 2 / span 1;
+}
+.members .two .description {
+    grid-area: 2 / 2 / span 2 / span 1;
+}
+.members .three .description {
+    grid-area: 2 / 3 / span 2 / span 1;
+}
+.members .four .description {
+    grid-area: 2 / 4 / span 2 / span 1;
+}
+.members .five .description {
+    grid-area: 2 / 5 / span 2 / span 1;
+}
+
+/*footer*/
+footer {
+    background: no-repeat url('media/sigma1v4.png') center/cover;
+}
+.contact {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-left: 3rem; 
+    color: whitesmoke;
+}
+.contact h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.contact p {
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+    transition: all 0.5s;
+}
+.contact p:hover {
+    color: rgba(177, 158, 247, 0.6);
+    text-shadow: rgba(177, 158, 247, 0.6) 0px 0px 10px ;
+    cursor: pointer;
+}
